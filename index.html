@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            html,body{
+                height:100%;
+            }
+            body{
+               
+                display:grid;
+                grid-template-rows:1fr 1fr;
+                height:fit-content; 
+                background:var(--border-glass) ;
+            }
+
+            :root{
+                --gradient:linear-gradient(135deg, #00f2fe , #4facfe );
+                 --border-glass: rgba(0, 0, 0, 0.19);
+            }
+            .btn{
+                background:var(--gradient);
+                width:50%;
+                height:10vw;
+                padding:10px;
+                font-family: monospace;
+                text-transform:capitalize ;
+                translate:50% 0%;
+                margin:3vw;
+                border-radius:5vw;
+                border:7px solid black;
+                cursor:pointer;
+
+            }
+            .btn:hover{
+                background:blue;
+                scale:1.1
+            }
+            .button{
+                overflow: hidden;
+
+            }
+            .img{
+                background-color: blue;
+                height:20vw;
+                width:20vw;
+                border-radius: 50%;
+                text-align:center;
+                font-size:10vw;
+                font-family:monospace;
+                margin:auto;
+                margin-top:3vw;
+                margin-bottom:3vw;
+                overflow:hidden;
+                place-items:center;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                outline:8px solid #00f2fe;
+                outline-offset: 4px;
+                color:white;
+
+
+            }
+            @media (max-width: 912px){
+                .btn{
+                
+                 background:var(--gradient);
+                width:50%;
+                height:100%;
+                padding:10px;
+                font-family: monospace;
+                text-transform:capitalize ;
+                translate:50% 0%;
+                margin:3vw;
+                border-radius:5vw;
+                border:7px solid black;
+                cursor:pointer;
+                font-weight: 700;
+               
+
+
+            }
+
+            }
+            .note{
+                font-size:4vw;
+                font-family:monospace;
+                text-align:center;
+                margin:auto;
+                margin-bottom:0px;
+                text-shadow: 1px 1px 1px black;
+                font-weight: 700;
+            }
+            .note b{
+                font-size:5vw;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profile">
+            <div class="img">E</div>
+            <div class="note"><b>Enny</b><br>Frontend Website Developer In Progress</div>
+        </div>
+        <div class="button">
+            <div ><button class="btn">Github</button></div>
+           <div ><button class="btn">Contact Me</button></div>
+           <div ><button class="btn">Discord</button></div>
+        </div>
+    </body>
+</html>
