@@ -12,7 +12,7 @@
                 display:grid;
                 grid-template-rows:1fr 1fr;
                 height:fit-content; 
-                background:var(--border-glass) ;
+                background:var(--border-glass);
             }
 
             :root{
@@ -35,7 +35,6 @@
             }
             .btn:hover{
                 background:blue;
-                scale:1.1
             }
             .button{
                 overflow: hidden;
@@ -60,8 +59,9 @@
                 outline:8px solid #00f2fe;
                 outline-offset: 4px;
                 color:white;
-
-
+            }
+            .img:hover{
+                animation:spin 1000ms infinite;
             }
             @media (max-width: 912px){
                 .btn{
@@ -96,6 +96,13 @@
             .note b{
                 font-size:5vw;
                 font-weight: 900;
+            }
+            @keyframes spin{
+                from{transform:rotate(0deg)}
+                to{transform:rotate(360deg)}
+            }
+            .btn:hover{
+                transform:translateY(-20%);
             }
         </style>
     </head>
